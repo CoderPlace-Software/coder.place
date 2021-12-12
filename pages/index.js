@@ -102,7 +102,7 @@ export default function Home() {
         <i className="fa fa-angle-up"></i>
       </a>
 
-      <Script src="assets/vendors/jquery/jquery-3.5.1.min.js"></Script>
+      {/*<Script src="assets/vendors/jquery/jquery-3.5.1.min.js"></Script>
       <Script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></Script>
       <Script src="assets/vendors/jarallax/jarallax.min.js"></Script>
       <Script src="assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></Script>
@@ -129,7 +129,7 @@ export default function Home() {
 
       <Script src="http://maps.google.com/maps/api/js?key=AIzaSyATY4Rxc8jNvDpsK8ZetC7JyN4PFVYGCGM"></Script>
 
-      <Script src="assets/js/moniz.js"></Script>
+      <Script src="assets/js/moniz.js"></Script>*/}
     </div>
   );
 }
