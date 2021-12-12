@@ -3,7 +3,6 @@
 # editors
 .idea
 
-
 # dependencies
 /node_modules
 /.pnp
