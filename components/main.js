@@ -423,7 +423,7 @@ export const Main = () => {
                     form, by injected humour, or randomised words.
                   </p>
                   <p className="welcome-one__right-text-2">
-                    You need to be sure there isn't anything embarrassing hidden
+                    You need to be sure there isnt anything embarrassing hidden
                     in the middle of text. All the lorem ipsum generators on the
                     Internet.
                   </p>
