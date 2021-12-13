@@ -31,6 +31,7 @@ export const Slider = () => {
                     </h2>
                     <a
                       target="_blank"
+                      rel="noreferrer noopener"
                       href={general.calendlyUrl}
                       className="thm-btn"
                     >
