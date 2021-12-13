@@ -5,6 +5,11 @@ import { Team } from './Team/Team';
 import { Video } from './Video/Video';
 import { Portfolio } from './Portfolio/Portfolio';
 import { BlogPromo } from './BlogPromo/BlogPromo';
+import { Reasons } from './Reasons/Reasons';
+import { TechStack } from './TechStack/TechStack';
+import { GetInTouch } from './GetInTouch/GetInTouch';
+import { PreFooter } from './PreFooter/PreFooter';
+import { Footer } from './Footer/Footer';
 
 export const Main = () => {
   return (
@@ -16,10 +21,15 @@ export const Main = () => {
         </div>
         <Slider />
         <Services />
+        <TechStack />
         <Team />
         <Video />
         <Portfolio />
+        <Reasons />
         <BlogPromo />
+        <GetInTouch />
+        <PreFooter />
+        <Footer />
       </div>
     </div>
   );
