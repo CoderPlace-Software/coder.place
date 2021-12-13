@@ -2971,6 +2971,7 @@ body.boxed-wrapper {
 }
 
 .services-one-bg {
+  background-image: url(/assets/images/backgrounds/services-one-bg.jpg);
   position: absolute;
   top: 0;
   left: 0;
