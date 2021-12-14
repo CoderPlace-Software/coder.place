@@ -27,3 +27,15 @@ export const services = [
     url: '',
   },
 ];
+
+export const techStack = [
+  { title: 'React', icon: 'fa-react' },
+  { title: 'Angular', icon: 'fa-angular' },
+  { title: 'JS/TS', icon: 'fa-js' },
+  { title: 'Python', icon: 'fa-python' },
+  { title: 'Node.js', icon: 'fa-node-js' },
+  // { title: 'HTML5', icon: 'fa-html5' },
+  { title: 'AWS', icon: 'fa-aws' },
+  // { title: 'G Cloud', icon: 'fa-google' },
+  // { title: 'CSS3', icon: 'fa-css3' },
+];

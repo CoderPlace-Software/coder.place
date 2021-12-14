@@ -1,0 +1,26 @@
+@import '@styles/common';
+
+.techStackWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+
+  div {
+    cursor: default;
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    i {
+      transition: 0.3s all;
+      font-size: 60px;
+    }
+
+    &:hover {
+      i {
+        color: $brand-color;
+      }
+    }
+  }
+}
+
+.techStackItem {
+}
