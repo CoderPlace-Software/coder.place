@@ -49,6 +49,11 @@ export const team = [
     position: 'JavaScript Expert',
     photoUrl: '/images/team/ivan-m.jpg',
     socials: [
+      /*{
+        type: 'website',
+        icon: 'fa-paper-plane',
+        url: 'https://matiishyn.dev',
+      },*/
       {
         type: 'linkedin',
         icon: 'fa-linkedin-in',
