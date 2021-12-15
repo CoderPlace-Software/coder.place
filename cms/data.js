@@ -7,14 +7,14 @@ export const general = {
 
 export const services = [
   {
-    icon: 'icon-front-end',
+    icon: 'icon-graphic-design',
     title: 'Web development',
     description:
       'We us the cutting-edge technologies and reliable solutions for web development',
     url: '',
   },
   {
-    icon: 'icon-color-sample',
+    icon: 'icon-front-end', // 'icon-color-sample',
     title: 'Data Science & Machine Learning',
     description: 'TODO',
     url: '',
@@ -38,4 +38,61 @@ export const techStack = [
   { title: 'AWS', icon: 'fa-aws' },
   // { title: 'G Cloud', icon: 'fa-google' },
   // { title: 'CSS3', icon: 'fa-css3' },
+];
+
+export const team = [
+  {
+    id: 1,
+    firstName: 'Ivan',
+    lastName: 'Matiishyn',
+    role: 'Co-founder',
+    position: 'JavaScript Expert',
+    photoUrl: '/images/team/ivan-m.jpg',
+    socials: [
+      {
+        type: 'linkedin',
+        icon: 'fa-linkedin-in',
+        url: 'https://www.linkedin.com/in/matiishyn/',
+      },
+      {
+        type: 'instagram',
+        icon: 'fa-instagram',
+        url: 'https://www.instagram.com/i.matiishyn/',
+      },
+    ],
+  },
+  {
+    id: 2,
+    firstName: 'Ihor',
+    lastName: 'Dehtiarenko',
+    role: 'Co-founder',
+    position: 'Python/ML Expert',
+    photoUrl: '/images/team/ihor.jpeg',
+    socials: [
+      {
+        type: 'linkedin',
+        icon: 'fa-linkedin-in',
+        url: 'https://www.linkedin.com/in/ihor-dehtiarenko/',
+      },
+    ],
+  },
+  {
+    id: 3,
+    firstName: 'Yuliia',
+    lastName: 'Zaborska',
+    position: 'QA Engineer',
+    photoUrl: '/images/team/yulia.jpg',
+    socials: [
+      {
+        type: 'linkedin',
+        icon: 'fa-linkedin-in',
+        url: 'https://www.linkedin.com/in/zaborska/',
+      },
+      {
+        type: 'instagram',
+        icon: 'fa-instagram',
+        url: 'https://www.instagram.com/yulia_zaborska/',
+      },
+    ],
+  },
 ];
