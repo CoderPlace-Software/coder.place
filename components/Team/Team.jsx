@@ -1,5 +1,7 @@
 import { team } from '../../cms/data';
 import Image from 'next/image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import styles from './Team.module.scss';
 
 export const Team = () => {
   return (
@@ -22,7 +24,7 @@ export const Team = () => {
                       objectFit="cover"
                     />
                   </div>
-                  <div className="team-one__social">
+                  <div className={`team-one__social ${styles.teamSocial}`}>
                     {person.socials.map((social) => (
                       <a
                         key={social.type}
@@ -31,7 +33,7 @@ export const Team = () => {
                         rel="noopener nofollow noreferrer"
                         className="clr-ins"
                       >
-                        <i className={`fab ${social.icon}`} />
+                        <FontAwesomeIcon icon={social.icon} />
                       </a>
                     ))}
                   </div>

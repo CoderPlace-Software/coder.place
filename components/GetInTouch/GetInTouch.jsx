@@ -1,3 +1,6 @@
+import { office, projectsCompleted } from '../../cms/data';
+import Image from 'next/image';
+
 export const GetInTouch = () => (
   <section className="get-in-touch">
     <div className="container">
@@ -7,7 +10,12 @@ export const GetInTouch = () => (
             className="get-in-touch__img wow fadeInLeft"
             data-wow-duration="1500ms"
           >
-            <img src="assets/images/resources/get-in-touch-img.jpg" alt />
+            <Image
+              src={office.photoUrl}
+              width={500}
+              height={472}
+              objectFit="cover"
+            />
             <div className="get-in-touch__img-shapes">
               <div className="get-in-touch__img-shape-1" />
               <div className="get-in-touch__img-shape-2" />
@@ -30,15 +38,12 @@ export const GetInTouch = () => (
                       There are many variations of passages of Lorem Ipsum
                       available, but the majority have in some form.
                     </p>
-                    {/*<h3
-                      className="odometer get-in-touch__locatins-count"
-                      data-count={35600}
-                    >
-                      00
+                    <h3 className="odometer get-in-touch__locatins-count">
+                      {projectsCompleted}
                     </h3>
                     <h4 className="get-in-touch__locatins-count-text">
                       Projects has been completed
-                    </h4>*/}
+                    </h4>
                   </div>
                 </div>
                 <div className="col-xl-6">
@@ -49,19 +54,19 @@ export const GetInTouch = () => (
                           <i className="icon-placeholder" />
                         </div>
                         <div className="get-in-touch__locations-title">
-                          <h4>Lviv, Ukraine</h4>
+                          <h4>{office.location}</h4>
                         </div>
                       </div>
                       <div className="get-in-touch__locations-bottom">
                         <p className="get-in-touch__locations-bottom-tagline">
-                          64a Kulparkivska str
+                          {office.address}
                         </p>
                         <h3>
                           <a
                             href="mailto:hello@coder.place"
                             className="get-in-touch__locations-mail"
                           >
-                            hello@coder.place
+                            {office.email}
                           </a>
                           <a
                             href="tel:92-666-888-000"

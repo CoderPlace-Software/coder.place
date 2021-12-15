@@ -1,6 +1,11 @@
+import { faEnvelope, faPaperPlane } from '@fortawesome/free-regular-svg-icons';
+import { faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+
 export const general = {
   calendlyUrl: 'https://calendly.com/coderplace/30min',
 };
+
+export const projectsCompleted = 36;
 
 // icons:
 // icon-front-end, icon-color-sample, icon-online-shopping
@@ -49,19 +54,24 @@ export const team = [
     position: 'JavaScript Expert',
     photoUrl: '/images/team/ivan-m.jpg',
     socials: [
-      /*{
+      {
         type: 'website',
-        icon: 'fa-paper-plane',
+        icon: faPaperPlane,
         url: 'https://matiishyn.dev',
-      },*/
+      },
+      {
+        type: 'email',
+        icon: faEnvelope,
+        url: 'mailto:ivan@coder.place',
+      },
       {
         type: 'linkedin',
-        icon: 'fa-linkedin-in',
+        icon: faLinkedinIn,
         url: 'https://www.linkedin.com/in/matiishyn/',
       },
       {
         type: 'instagram',
-        icon: 'fa-instagram',
+        icon: faInstagram,
         url: 'https://www.instagram.com/i.matiishyn/',
       },
     ],
@@ -75,8 +85,13 @@ export const team = [
     photoUrl: '/images/team/ihor.jpeg',
     socials: [
       {
+        type: 'email',
+        icon: faEnvelope,
+        url: 'mailto:ihor@coder.place',
+      },
+      {
         type: 'linkedin',
-        icon: 'fa-linkedin-in',
+        icon: faLinkedinIn,
         url: 'https://www.linkedin.com/in/ihor-dehtiarenko/',
       },
     ],
@@ -89,15 +104,27 @@ export const team = [
     photoUrl: '/images/team/yulia.jpg',
     socials: [
       {
+        type: 'email',
+        icon: faEnvelope,
+        url: 'mailto:hello@coder.place',
+      },
+      {
         type: 'linkedin',
-        icon: 'fa-linkedin-in',
+        icon: faLinkedinIn,
         url: 'https://www.linkedin.com/in/zaborska/',
       },
       {
         type: 'instagram',
-        icon: 'fa-instagram',
+        icon: faInstagram,
         url: 'https://www.instagram.com/yulia_zaborska/',
       },
     ],
   },
 ];
+
+export const office = {
+  location: 'Lviv, Ukraine',
+  address: '64a Kulparkivska str',
+  email: 'hello@coder.place',
+  photoUrl: '/images/lviv1.jpg',
+};
