@@ -1,30 +1,11 @@
+import styles from './Portfolio.module.scss';
+
 export const Portfolio = () => (
   <section className="portfolio-one" id="portfolio">
     <div className="portfolio-one__container">
-      <div className="section-title text-center">
+      <div className={`section-title text-center ${styles.header}`}>
         <span className="section-title__tagline">Recent work completed</span>
         <h2 className="section-title__title">Work showcase</h2>
-      </div>
-      <div className="row">
-        <div className="col-xl-12">
-          <ul className="portfolio-filter style1 post-filter has-dynamic-filters-counter list-unstyled">
-            <li data-filter=".filter-item" className="active">
-              <span className="filter-text">All</span>
-            </li>
-            <li data-filter=".bra">
-              <span className="filter-text">Branding</span>
-            </li>
-            <li data-filter=".illus">
-              <span className="filter-text">illustration</span>
-            </li>
-            <li data-filter=".photo">
-              <span className="filter-text">Photography</span>
-            </li>
-            <li data-filter=".web">
-              <span className="filter-text last-pd-none">Web design</span>
-            </li>
-          </ul>
-        </div>
       </div>
       <div className="row filter-layout masonary-layout">
         <div className="col-xl-3 col-lg-6 col-md-6 filter-item bra illus web photo">

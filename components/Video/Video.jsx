@@ -4,7 +4,7 @@ export const Video = () => {
       <div
         className="video-one-bg"
         style={{
-          backgroundImage: 'url(assets/images/backgrounds/video-one-bg.jpg)',
+          backgroundImage: 'url(/images/video-bg.jpg)',
         }}
       />
       <div className="container">
@@ -12,10 +12,7 @@ export const Video = () => {
           <div className="col-xl-12">
             <div className="video-one__inner">
               <div className="video-one__link">
-                <a
-                  href="https://www.youtube.com/watch?v=xFrGuyw1V8s"
-                  className="video-one__btn video-popup"
-                >
+                <a href="#" className="video-one__btn video-popup">
                   <div className="video-one__video-icon">
                     <span className="icon-play-button" />
                     <i className="ripple" />

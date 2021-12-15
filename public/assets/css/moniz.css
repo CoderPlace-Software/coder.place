@@ -2837,6 +2837,7 @@ body.boxed-wrapper {
 }
 
 .we-make-bg {
+  background-image: url('/assets/images/backgrounds/we-make-bg.jpg');
   position: absolute;
   top: 0;
   bottom: 0;

@@ -15,13 +15,14 @@ export const services = [
     icon: 'icon-graphic-design',
     title: 'Web development',
     description:
-      'We us the cutting-edge technologies and reliable solutions for web development',
+      'We use the cutting-edge technologies and reliable solutions for web development',
     url: '',
   },
   {
     icon: 'icon-front-end', // 'icon-color-sample',
     title: 'Data Science & Machine Learning',
-    description: 'TODO',
+    description:
+      'We help businesses to empower their capabilities using NPL and CV',
     url: '',
   },
   {
@@ -128,3 +129,5 @@ export const office = {
   email: 'hello@coder.place',
   photoUrl: '/images/lviv1.jpg',
 };
+
+const projects = [];

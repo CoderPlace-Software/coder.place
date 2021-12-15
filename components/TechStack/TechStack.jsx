@@ -3,15 +3,10 @@ import styles from './TechStack.module.scss';
 
 export const TechStack = () => (
   <section className="we-make">
-    <div
-      className="we-make-bg"
-      style={{
-        backgroundImage: 'url(assets/images/backgrounds/we-make-bg.jpg)',
-      }}
-    />
+    <div className="we-make-bg" />
     <div className="container">
       <div className="row">
-        <div className="col-xl-7 col-lg-6">
+        <div className="col-xl-7 col-lg-6 d-flex align-items-center">
           <div className="we-make__left">
             <div className="section-title text-left">
               <span className="section-title__tagline">Technical Stack</span>
