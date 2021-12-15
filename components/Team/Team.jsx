@@ -19,7 +19,6 @@ export const Team = () => {
                       src={person.photoUrl}
                       width={270}
                       height={322}
-                      layout="responsive"
                       objectFit="cover"
                     />
                   </div>
