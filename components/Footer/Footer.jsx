@@ -16,7 +16,7 @@ export const Footer = () => (
             <div className="footer-widget__column footer-widget__about">
               <div className="footer-widget__about-logo">
                 <a href="index.html">
-                  <img src="assets/images/resources/footer-logo.png" alt />
+                  <img src="/images/logo.png" alt />
                 </a>
               </div>
               <p className="footer-widget__about-text">

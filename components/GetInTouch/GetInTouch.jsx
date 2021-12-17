@@ -68,12 +68,14 @@ export const GetInTouch = () => (
                           >
                             {office.email}
                           </a>
-                          <a
-                            href="tel:92-666-888-000"
-                            className="get-in-touch__locations-phone"
-                          >
-                            92 666 888 000
-                          </a>
+                          {office.phone && (
+                            <a
+                              href="tel:92-666-888-000"
+                              className="get-in-touch__locations-phone"
+                            >
+                              {office.phone}
+                            </a>
+                          )}
                         </h3>
                       </div>
                     </div>

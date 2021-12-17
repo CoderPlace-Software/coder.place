@@ -5,15 +5,10 @@ export const Header = () => (
         <div className="main-menu-wrapper__left clearfix">
           <div className="main-menu-wrapper__logo">
             <a href="index.html">
-              <img src="assets/images/resources/logo.png" alt="" />
+              <img src="/images/logo.png" alt="Logo" />
             </a>
           </div>
-          <div className="main-menu-wrapper__search-box">
-            <a
-              href="#"
-              className="main-menu-wrapper__search search-toggler icon-magnifying-glass"
-            />
-          </div>
+
           <div className="main-menu-wrapper__social">
             <a href="#">
               <i className="fab fa-twitter" />

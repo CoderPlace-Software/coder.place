@@ -128,6 +128,7 @@ export const office = {
   address: '64a Kulparkivska str',
   email: 'hello@coder.place',
   photoUrl: '/images/lviv1.jpg',
+  phone: null,
 };
 
 export const projects = [

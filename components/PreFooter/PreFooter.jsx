@@ -1,3 +1,5 @@
+import { general } from '../../cms/data';
+
 export const PreFooter = () => (
   <section className="cta-two">
     <div className="cta-two-shape-1" />
@@ -12,7 +14,9 @@ export const PreFooter = () => (
             <div className="cta-two__btn-box">
               <span>
                 <a
-                  href="contact.html"
+                  href={general.calendlyUrl}
+                  target="_blank"
+                  rel="noreferrer noopener"
                   className="thm-btn cta-two__btn thm-btn--dark thm-btn--dark--light-hover"
                 >
                   <span>Free Consultation</span>
