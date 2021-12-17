@@ -13,8 +13,11 @@ export const Team = () => {
         </div>
         <div className="row justify-content-evenly">
           {team.map((person) => (
-            <div key={person.id} className="col-xl-3 col-lg-3 col-md-6">
-              <div className="team-one__single">
+            <div
+              key={person.id}
+              className="col-xl-3 col-lg-3 col-md-6 d-flex justify-content-center"
+            >
+              <div className={`team-one__single ${styles.personWrapper}`}>
                 <div className="team-one__img-box">
                   <div className="team-one__img">
                     <Image

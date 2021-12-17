@@ -152,7 +152,7 @@ export const projects = [
     title: 'Web Trading Platform',
     description: 'Trading Platform, API',
     url: '#',
-    imageUrl: '/images/projects/trading.png',
+    imageUrl: '/images/projects/trading2.jpg',
     tech: ['React'],
   },
 ];

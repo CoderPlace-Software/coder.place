@@ -13,9 +13,11 @@ export const Portfolio = () => (
         {projects.map((project) => (
           <div
             key={project.id}
-            className="col-xl-3 col-lg-6 col-md-6 filter-item bra illus web photo"
+            className="col-xl-3 col-lg-6 col-md-6 d-flex justify-content-center"
           >
-            <div className="portfolio-one__single">
+            <div
+              className={`portfolio-one__single ${styles.portfolioItemWrapper}`}
+            >
               <div className="portfolio-one__img">
                 <Image
                   src={project.imageUrl}
