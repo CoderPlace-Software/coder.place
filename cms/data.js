@@ -130,4 +130,29 @@ export const office = {
   photoUrl: '/images/lviv1.jpg',
 };
 
-const projects = [];
+export const projects = [
+  {
+    id: 1,
+    title: 'Coupons Marketplaces',
+    description: 'Chrome Extension, API, Public Website',
+    url: '#',
+    imageUrl: '/images/projects/chrome-ext-1.png',
+    tech: ['React'],
+  },
+  {
+    id: 2,
+    title: 'E-commerce website',
+    description: 'E-commerce website, Admin website, API',
+    url: '#',
+    imageUrl: '/images/projects/ecommerce.webp',
+    tech: ['React'],
+  },
+  {
+    id: 3,
+    title: 'Web Trading Platform',
+    description: 'Trading Platform, API',
+    url: '#',
+    imageUrl: '/images/projects/trading.png',
+    tech: ['React'],
+  },
+];
