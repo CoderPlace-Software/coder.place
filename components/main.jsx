@@ -10,6 +10,7 @@ import { TechStack } from './TechStack/TechStack';
 import { GetInTouch } from './GetInTouch/GetInTouch';
 import { PreFooter } from './PreFooter/PreFooter';
 import { Footer } from './Footer/Footer';
+import { MobileMenu } from './MobileMenu/MobileMenu';
 
 export const Main = () => {
   return (
