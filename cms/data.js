@@ -20,6 +20,7 @@ export const general = {
   githubUrl: 'https://github.com/coderplace-software',
   facebookUrl: 'https://facebook.com/CoderPlace.software',
   instagramUrl: 'https://instagram.com/CoderPlace.software',
+  messengerUrl: 'https://m.me/coderplace.software',
 };
 
 export const projectsCompleted = 36;

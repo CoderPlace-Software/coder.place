@@ -1,9 +1,33 @@
-import { companySocials } from '../../cms/data';
+import { companySocials, general } from '../../cms/data';
 import styles from './Header.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import Image from 'next/image';
 import logoObj from '@public/images/logo.png';
+import { faFacebookMessenger } from '@fortawesome/free-brands-svg-icons';
+
+const menu = [
+  {
+    url: '#services',
+    title: 'Services',
+  },
+  {
+    url: '#team',
+    title: 'Team',
+  },
+  {
+    url: '#portfolio',
+    title: 'Portfolio',
+  },
+  {
+    url: '#blog',
+    title: 'Blog',
+  },
+  {
+    url: '#contact',
+    title: 'Contact',
+  },
+];
 
 export const Header = () => (
   <header className="main-header clearfix">
@@ -44,7 +68,7 @@ export const Header = () => (
             <span />
           </a>
           <ul className="main-menu__list">
-            <li className="dropdown">
+            {/*<li className="dropdown">
               <a href="index.html">Home</a>
               <ul>
                 <li>
@@ -208,19 +232,30 @@ export const Header = () => (
                   <a href="blog-details.html">Blog details</a>
                 </li>
               </ul>
-            </li>
-            <li>
-              <a href="contact.html">Contact</a>
-            </li>
+            </li>*/}
+
+            {menu.map((item) => (
+              <li key={item.title}>
+                <Link href={item.url}>{item.title}</Link>
+              </li>
+            ))}
           </ul>
         </div>
         <div className="main-menu-wrapper__right">
           <div className="main-menu-wrapper__right-contact-box">
-            <div className="main-menu-wrapper__right-contact-icon">
-              <span className="icon-phone-call" />
+            <div
+              className={`main-menu-wrapper__right-contact-icon ${styles.messengerIconWrapper}`}
+            >
+              <FontAwesomeIcon icon={faFacebookMessenger} />
             </div>
             <div className="main-menu-wrapper__right-contact-number">
-              <a href="tel:92-666-888-0000">92 666 888 0000</a>
+              <a
+                href={general.messengerUrl}
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                Send a Message
+              </a>
             </div>
           </div>
         </div>

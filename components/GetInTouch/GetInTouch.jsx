@@ -2,7 +2,7 @@ import { office, projectsCompleted } from '../../cms/data';
 import Image from 'next/image';
 
 export const GetInTouch = () => (
-  <section className="get-in-touch">
+  <section className="get-in-touch" id="contact">
     <div className="container">
       <div className="row">
         <div className="col-xl-6">
