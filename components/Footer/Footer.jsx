@@ -132,7 +132,7 @@ export const Footer = () => (
             <div className="site-footer-bottom__inner">
               <p className="site-footer-bottom__copy-right">
                 © Copyright {new Date().getFullYear()} by{' '}
-                <a href="https://coder.place">Coder.Place</a>
+                <a href="https://coder.place">CoderPlace</a>
               </p>
             </div>
           </div>

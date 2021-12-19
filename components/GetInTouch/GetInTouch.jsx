@@ -11,9 +11,10 @@ export const GetInTouch = () => (
             data-wow-duration="1500ms"
           >
             <Image
-              src={office.photoUrl}
+              src={office.photoObj}
               width={500}
               height={472}
+              placeholder="blur"
               objectFit="cover"
             />
             <div className="get-in-touch__img-shapes">

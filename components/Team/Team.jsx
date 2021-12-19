@@ -21,9 +21,10 @@ export const Team = () => {
                 <div className="team-one__img-box">
                   <div className="team-one__img">
                     <Image
-                      src={person.photoUrl}
+                      src={person.photoObj}
                       width={270}
                       height={322}
+                      placeholder="blur"
                       objectFit="cover"
                     />
                   </div>

@@ -1,3 +1,7 @@
+import { companySocials } from '../../cms/data';
+import styles from './Header.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 export const Header = () => (
   <header className="main-header clearfix">
     <nav className="main-menu clearfix">
@@ -10,18 +14,20 @@ export const Header = () => (
           </div>
 
           <div className="main-menu-wrapper__social">
-            <a href="#">
-              <i className="fab fa-twitter" />
-            </a>
-            <a href="#" className="clr-fb">
-              <i className="fab fa-facebook" />
-            </a>
-            <a href="#" className="clr-dri">
-              <i className="fab fa-pinterest-p" />
-            </a>
-            <a href="#" className="clr-ins">
-              <i className="fab fa-instagram" />
-            </a>
+            {companySocials.map((social) => (
+              <a
+                key={social.url}
+                href={social.url}
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+                className={styles.socialLink}
+              >
+                {social.icon && <FontAwesomeIcon icon={social.icon} />}
+                {social.iconCustom && (
+                  <social.iconCustom style={social.customStyle} />
+                )}
+              </a>
+            ))}
           </div>
         </div>
         <div className="main-menu-wrapper__main-menu">

@@ -1,8 +1,25 @@
 import { faEnvelope, faPaperPlane } from '@fortawesome/free-regular-svg-icons';
-import { faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import {
+  faFacebook,
+  faGithub,
+  faInstagram,
+  faLinkedinIn,
+} from '@fortawesome/free-brands-svg-icons';
+import { SiUpwork } from 'react-icons/si';
+
+// image objects
+import ivan from '@public/images/team/ivan-m.jpg';
+import ihor from '@public/images/team/ihor.jpeg';
+import yulia from '@public/images/team/yulia.jpg';
+import lviv from '@public/images/lviv1.jpg';
 
 export const general = {
   calendlyUrl: 'https://calendly.com/coderplace/30min',
+  linkedInUrl: 'https://www.linkedin.com/company/coderplace-software',
+  upworkUrl: 'https://www.upwork.com/ag/coderplace/',
+  githubUrl: 'https://github.com/coderplace-software',
+  facebookUrl: 'https://facebook.com/CoderPlace.software',
+  instagramUrl: 'https://instagram.com/CoderPlace.software',
 };
 
 export const projectsCompleted = 36;
@@ -54,6 +71,7 @@ export const team = [
     role: 'Co-founder',
     position: 'JavaScript Expert',
     photoUrl: '/images/team/ivan-m.jpg',
+    photoObj: ivan,
     socials: [
       {
         type: 'website',
@@ -84,6 +102,7 @@ export const team = [
     role: 'Co-founder',
     position: 'Python/ML Expert',
     photoUrl: '/images/team/ihor.jpeg',
+    photoObj: ihor,
     socials: [
       {
         type: 'email',
@@ -103,6 +122,7 @@ export const team = [
     lastName: 'Zaborska',
     position: 'QA Engineer',
     photoUrl: '/images/team/yulia.jpg',
+    photoObj: yulia,
     socials: [
       {
         type: 'email',
@@ -128,6 +148,7 @@ export const office = {
   address: '64a Kulparkivska str',
   email: 'hello@coder.place',
   photoUrl: '/images/lviv1.jpg',
+  photoObj: lviv,
   phone: null,
 };
 
@@ -156,4 +177,16 @@ export const projects = [
     imageUrl: '/images/projects/trading2.jpg',
     tech: ['React'],
   },
+];
+
+export const companySocials = [
+  {
+    iconCustom: SiUpwork,
+    customStyle: { width: 22, height: 22 },
+    url: general.upworkUrl,
+  },
+  { icon: faLinkedinIn, url: general.linkedInUrl },
+  { icon: faGithub, url: general.githubUrl },
+  { icon: faFacebook, url: general.facebookUrl },
+  { icon: faInstagram, url: general.instagramUrl },
 ];
