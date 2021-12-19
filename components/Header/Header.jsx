@@ -1,6 +1,9 @@
 import { companySocials } from '../../cms/data';
 import styles from './Header.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
+import Image from 'next/image';
+import logoObj from '@public/images/logo.png';
 
 export const Header = () => (
   <header className="main-header clearfix">
@@ -8,9 +11,15 @@ export const Header = () => (
       <div className="main-menu-wrapper clearfix">
         <div className="main-menu-wrapper__left clearfix">
           <div className="main-menu-wrapper__logo">
-            <a href="index.html">
-              <img src="/images/logo.png" alt="Logo" />
-            </a>
+            <Link href="/">
+              <Image
+                src={logoObj}
+                width={250}
+                height={48}
+                placeholder="blur"
+                objectFit="cover"
+              />
+            </Link>
           </div>
 
           <div className="main-menu-wrapper__social">
