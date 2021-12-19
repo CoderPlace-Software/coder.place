@@ -13,7 +13,6 @@ export const MobileMenu = ({ isVisible, toggleMenu, menuItems }) => {
         className="mobile-nav__overlay mobile-nav__toggler"
         onClick={toggleMenu}
       />
-      {/* /.mobile-nav__overlay */}
       <div className="mobile-nav__content">
         <span
           className="mobile-nav__close mobile-nav__toggler"
@@ -30,7 +29,6 @@ export const MobileMenu = ({ isVisible, toggleMenu, menuItems }) => {
             />
           </Link>
         </div>
-        {/* /.logo-box */}
         <div className="mobile-nav__container">
           <ul className="main-menu__list one-page-scroll-menu">
             {menuItems.map((item) => (
@@ -40,7 +38,6 @@ export const MobileMenu = ({ isVisible, toggleMenu, menuItems }) => {
             ))}
           </ul>
         </div>
-        {/* /.mobile-nav__container */}
         <ul className="mobile-nav__contact list-unstyled">
           <li>
             <i className="fa fa-envelope" />
@@ -65,7 +62,6 @@ export const MobileMenu = ({ isVisible, toggleMenu, menuItems }) => {
             </a>
           </li>
         </ul>
-        {/* /.mobile-nav__contact */}
         <div className="mobile-nav__top justify-content-center">
           <div className="mobile-nav__social">
             {companySocials.map((social) => (
@@ -83,11 +79,8 @@ export const MobileMenu = ({ isVisible, toggleMenu, menuItems }) => {
               </a>
             ))}
           </div>
-          {/* /.mobile-nav__social */}
         </div>
-        {/* /.mobile-nav__top */}
       </div>
-      {/* /.mobile-nav__content */}
     </div>
   );
 };
