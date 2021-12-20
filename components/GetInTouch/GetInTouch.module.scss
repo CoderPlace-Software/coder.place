@@ -1,0 +1,22 @@
+.socialNetworkItem {
+  border-top: 1px solid #e3e3e3;
+  padding-top: 10px;
+  margin-top: 4px;
+
+  a {
+    &:hover {
+      color: #000;
+    }
+  }
+  svg {
+    width: 18px;
+  }
+}
+
+.actionButton {
+  padding: 8px 20px;
+
+  svg {
+    width: 18px;
+  }
+}

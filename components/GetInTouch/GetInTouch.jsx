@@ -1,5 +1,14 @@
-import { office, projectsCompleted } from '../../cms/data';
+import {
+  companySocials,
+  general,
+  office,
+  projectsCompleted,
+} from '../../cms/data';
 import Image from 'next/image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import styles from './GetInTouch.module.scss';
+import { faFacebookMessenger } from '@fortawesome/free-brands-svg-icons';
+import { faCalendar } from '@fortawesome/free-regular-svg-icons';
 
 export const GetInTouch = () => (
   <section className="get-in-touch" id="contact">
@@ -26,19 +35,61 @@ export const GetInTouch = () => (
         <div className="col-xl-6">
           <div className="get-in-touch__right">
             <div className="section-title text-left">
-              <span className="section-title__tagline">Contact with us</span>
-              <h2 className="section-title__title">
-                Get in touch with the agency
-              </h2>
+              <span className="section-title__tagline">Contact us</span>
+              <h2 className="section-title__title">Get in touch with us</h2>
             </div>
             <div className="get-in-touch__locations">
               <div className="row">
                 <div className="col-xl-6 col-lg-6 col-md-6">
-                  <div className="get-in-touch__locations-left">
-                    <p className="get-in-touch__locations-text">
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have in some form.
-                    </p>
+                  <div className="get-in-touch__locations-left justify-content-center">
+                    <a
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      href={general.messengerUrl}
+                      className={`thm-btn mb-3 ${styles.actionButton}`}
+                    >
+                      <div className="d-flex">
+                        <FontAwesomeIcon
+                          className="me-2 position-relative"
+                          icon={faFacebookMessenger}
+                        />
+                        <span>Send a Message </span>
+                      </div>
+                    </a>
+                    <a
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      href={general.calendlyUrl}
+                      className={`thm-btn mb-3 ${styles.actionButton}`}
+                    >
+                      <div className="d-flex">
+                        <FontAwesomeIcon
+                          className="me-2 position-relative"
+                          icon={faCalendar}
+                        />
+                        <span>Book a Meeting</span>
+                      </div>
+                    </a>
+                    <div
+                      className={`mobile-nav__social justify-content-center ${styles.socialNetworkItem}`}
+                    >
+                      {companySocials.map((social) => (
+                        <a
+                          key={social.url}
+                          href={social.url}
+                          target="_blank"
+                          rel="noopener nofollow noreferrer"
+                          className={styles.socialLink}
+                        >
+                          {social.icon && (
+                            <FontAwesomeIcon icon={social.icon} />
+                          )}
+                          {social.iconCustom && (
+                            <social.iconCustom style={social.customStyle} />
+                          )}
+                        </a>
+                      ))}
+                    </div>
                     <h3 className="odometer get-in-touch__locatins-count">
                       {projectsCompleted}
                     </h3>
