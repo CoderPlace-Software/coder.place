@@ -41,7 +41,7 @@ export const GetInTouch = () => (
             <div className="get-in-touch__locations">
               <div className="row">
                 <div className="col-xl-6 col-lg-6 col-md-6">
-                  <div className="get-in-touch__locations-left justify-content-center">
+                  <div className="get-in-touch__locations-left text-center">
                     <a
                       target="_blank"
                       rel="noreferrer noopener"
