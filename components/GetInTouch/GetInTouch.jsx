@@ -19,13 +19,21 @@ export const GetInTouch = () => (
             className="get-in-touch__img wow fadeInLeft"
             data-wow-duration="1500ms"
           >
-            <Image
+            {/*<Image
               src={office.photoObj}
               width={500}
               height={472}
               placeholder="blur"
               objectFit="cover"
-            />
+            />*/}
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.84775459921!2d23.98743131604981!3d49.82652657939415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae7794fbfe733%3A0x3f98646902e15026!2sKulparkivska%20St%2C%2064%D0%B0%2C%20L&#39;viv%2C%20L&#39;vivs&#39;ka%20oblast%2C%2079041!5e0!3m2!1sen!2sua!4v1640024924516!5m2!1sen!2sua"
+              // width="500"
+              height="472"
+              style={{ border: 0, width: '100%' }}
+              allowFullScreen=""
+              loading="lazy"
+            ></iframe>
             <div className="get-in-touch__img-shapes">
               <div className="get-in-touch__img-shape-1" />
               <div className="get-in-touch__img-shape-2" />

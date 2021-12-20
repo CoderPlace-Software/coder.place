@@ -5827,7 +5827,7 @@ body.boxed-wrapper {
 .get-in-touch__img {
   position: relative;
   display: block;
-  margin-right: 70px;
+  /*margin-right: 70px;*/
   z-index: 5;
 }
 
