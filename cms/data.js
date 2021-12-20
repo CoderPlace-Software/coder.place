@@ -34,34 +34,34 @@ export const services = [
     title: 'Web development',
     description:
       'We use the cutting-edge technologies and reliable solutions for web development',
-    url: '',
+    url: '#',
   },
   {
     icon: 'icon-front-end', // 'icon-color-sample',
     title: 'Data Science & Machine Learning',
     description:
       'We help businesses to empower their capabilities using NPL and CV',
-    url: '',
+    url: '#',
   },
   {
     icon: 'icon-online-shopping',
     title: 'Quality Assurance',
     description:
       'We provide full cycle of development together with quality assurance that ensures correctness of the application',
-    url: '',
+    url: '#',
   },
 ];
 
 export const techStack = [
-  { title: 'React', icon: 'fa-react' },
-  { title: 'Angular', icon: 'fa-angular' },
-  { title: 'JS/TS', icon: 'fa-js' },
-  { title: 'Python', icon: 'fa-python' },
-  { title: 'Node.js', icon: 'fa-node-js' },
-  // { title: 'HTML5', icon: 'fa-html5' },
-  { title: 'AWS', icon: 'fa-aws' },
-  // { title: 'G Cloud', icon: 'fa-google' },
-  // { title: 'CSS3', icon: 'fa-css3' },
+  { title: 'React', icon: 'fa-react', url: '#' },
+  { title: 'Angular', icon: 'fa-angular', url: '#' },
+  { title: 'JS/TS', icon: 'fa-js', url: '#' },
+  { title: 'Python', icon: 'fa-python', url: '#' },
+  { title: 'Node.js', icon: 'fa-node-js', url: '#' },
+  // { title: 'HTML5', icon: 'fa-html5', url: '#' },
+  { title: 'AWS', icon: 'fa-aws', url: '#' },
+  // { title: 'G Cloud', icon: 'fa-google', url: '#' },
+  // { title: 'CSS3', icon: 'fa-css3', url: '#' },
 ];
 
 export const team = [
@@ -190,4 +190,27 @@ export const companySocials = [
   { icon: faGithub, url: general.githubUrl },
   { icon: faFacebook, url: general.facebookUrl },
   { icon: faInstagram, url: general.instagramUrl },
+];
+
+export const menu = [
+  {
+    url: '#services',
+    title: 'Services',
+  },
+  {
+    url: '#team',
+    title: 'Team',
+  },
+  {
+    url: '#portfolio',
+    title: 'Portfolio',
+  },
+  {
+    url: '#blog',
+    title: 'Blog',
+  },
+  {
+    url: '#contact',
+    title: 'Contact',
+  },
 ];

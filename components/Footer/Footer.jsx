@@ -1,3 +1,15 @@
+import {
+  companySocials,
+  general,
+  menu,
+  office,
+  services,
+  techStack,
+} from '../../cms/data';
+import Link from 'next/link';
+import styles from '../Header/Header.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 export const Footer = () => (
   <footer className="site-footer">
     <div className="site-footer__top">
@@ -9,89 +21,96 @@ export const Footer = () => (
       />
       <div className="container">
         <div className="row">
-          <div
-            className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
-            data-wow-delay="100ms"
-          >
+          <div className="col-xl-3 col-lg-6 col-md-6">
             <div className="footer-widget__column footer-widget__about">
               <div className="footer-widget__about-logo">
                 <a href="index.html">
                   <img src="/images/logo.png" alt />
                 </a>
               </div>
-              <p className="footer-widget__about-text">
-                Welcome to our website design agency. Lore ipsum simply text
-                amet cing elit.
-              </p>
+              <p className="footer-widget__about-text">Web Software Makers</p>
               <div className="footer-widget__about-social-list">
-                <a href="#">
-                  <i className="fab fa-twitter" />
-                </a>
-                <a href="#" className="clr-fb">
-                  <i className="fab fa-facebook" />
-                </a>
-                <a href="#" className="clr-dri">
-                  <i className="fab fa-pinterest-p" />
-                </a>
-                <a href="#" className="clr-ins">
-                  <i className="fab fa-instagram" />
-                </a>
+                {companySocials.map((social) => (
+                  <a
+                    key={social.url}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                    className={styles.socialLink}
+                  >
+                    {social.icon && <FontAwesomeIcon icon={social.icon} />}
+                    {social.iconCustom && (
+                      <social.iconCustom style={social.customStyle} />
+                    )}
+                  </a>
+                ))}
               </div>
             </div>
           </div>
-          <div
-            className="col-xl-2 col-lg-6 col-md-6 wow fadeInUp"
-            data-wow-delay="200ms"
-          >
+          <div className="col-xl-2 col-lg-6 col-md-6">
             <div className="footer-widget__column footer-widget__explore clearfix">
-              <h3 className="footer-widget__title">Explore</h3>
+              <h3 className="footer-widget__title">Company</h3>
               <ul className="footer-widget__explore-list list-unstyled">
-                <li>
-                  <a href="about.html">About</a>
-                </li>
-                <li>
-                  <a href="team.html">Meet our team</a>
-                </li>
-                <li>
-                  <a href="#">Case stories</a>
-                </li>
-                <li>
-                  <a href="blog.html">Latest news</a>
-                </li>
-                <li>
-                  <a href="contact.html">Contact</a>
-                </li>
+                {menu.map((item) => (
+                  <li key={item.title}>
+                    <Link href={item.url}>{item.title}</Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
-          <div
-            className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
-            data-wow-delay="400ms"
-          >
+          <div className="col-xl-2 col-lg-6 col-md-6">
+            <div className="footer-widget__column footer-widget__explore clearfix">
+              <h3 className="footer-widget__title">Services</h3>
+              <ul className="footer-widget__explore-list list-unstyled">
+                {services.map((item) => (
+                  <li key={item.title}>
+                    <Link href={item.url}>{item.title}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div className="col-xl-2 col-lg-6 col-md-6">
+            <div className="footer-widget__column footer-widget__explore clearfix">
+              <h3 className="footer-widget__title">Technology</h3>
+              <ul className="footer-widget__explore-list list-unstyled">
+                {techStack.map((item) => (
+                  <li key={item.title}>
+                    <Link href={item.url}>{item.title}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div className="col-xl-3 col-lg-6 col-md-6">
             <div className="footer-widget__column footer-widget__contact">
               <h3 className="footer-widget__title">Contact</h3>
               <p className="footer-widget__contact-text">
-                66 Broklyn Street New York United States of America
+                {office.location} <br /> {office.address}
               </p>
               <div className="footer-widget__contact-info">
                 <p>
                   <a
-                    href="tel:92-666-888-0000"
+                    href={general.messengerUrl}
+                    target="_blank"
+                    rel="noreferrer noopener"
                     className="footer-widget__contact-phone"
                   >
-                    92 666 888 0000
+                    Send a Message
                   </a>
+
                   <a
-                    href="mailto:needhelp@company.com"
+                    href={`mailto:${office.email}`}
                     className="footer-widget__contact-mail"
                   >
-                    needhelp@company.com
+                    {office.email}
                   </a>
                 </p>
               </div>
             </div>
           </div>
-          <div
+          {/*<div
             className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
             data-wow-delay="400ms"
           >
@@ -121,7 +140,7 @@ export const Footer = () => (
                 </div>
               </div>
             </div>
-          </div>
+          </div>*/}
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import { companySocials, general } from '../../cms/data';
+import { companySocials, general, menu } from '../../cms/data';
 import styles from './Header.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
@@ -8,34 +8,8 @@ import { faFacebookMessenger } from '@fortawesome/free-brands-svg-icons';
 import { MobileMenu } from '../MobileMenu/MobileMenu';
 import { useState } from 'react';
 
-const menu = [
-  {
-    url: '#services',
-    title: 'Services',
-  },
-  {
-    url: '#team',
-    title: 'Team',
-  },
-  {
-    url: '#portfolio',
-    title: 'Portfolio',
-  },
-  {
-    url: '#blog',
-    title: 'Blog',
-  },
-  {
-    url: '#contact',
-    title: 'Contact',
-  },
-];
-
 export const Header = () => {
   const [visible, setVisible] = useState(false);
-
-  console.log('>>> visible');
-  console.log(visible);
 
   const toggleMobileMenu = () => setVisible((prevValue) => !prevValue);
 

@@ -115,7 +115,7 @@ export const GetInTouch = () => (
                         </p>
                         <h3>
                           <a
-                            href="mailto:hello@coder.place"
+                            href={`mailto:${office.email}`}
                             className="get-in-touch__locations-mail"
                           >
                             {office.email}
