@@ -27,6 +27,7 @@ export const Header = () => {
                     height={48}
                     placeholder="blur"
                     objectFit="cover"
+                    priority
                   />
                 </Link>
               </div>
