@@ -25,9 +25,9 @@ export const Main = () => {
         <TechStack />
         <Team />
         <Video />
-        {/*<Portfolio />*/}
+        <Portfolio />
         <Reasons />
-        <BlogPromo />
+        {/*<BlogPromo />*/}
         <GetInTouch />
         <PreFooter />
         <Footer />
