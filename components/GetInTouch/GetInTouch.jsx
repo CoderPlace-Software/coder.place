@@ -106,7 +106,7 @@ export const GetInTouch = () => (
                     </h4>
                   </div>
                 </div>
-                <div className="col-xl-6">
+                <div className="col-xl-6 col-lg-6 col-md-6">
                   <div className="get-in-touch__locations-right">
                     <div className="get-in-touch__locations-single">
                       <div className="get-in-touch__locations-top">
