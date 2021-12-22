@@ -56,7 +56,7 @@ export const GetInTouch = () => (
                       href={general.messengerUrl}
                       className={`thm-btn mb-3 ${styles.actionButton}`}
                     >
-                      <div className="d-flex">
+                      <div className="d-flex align-items-center">
                         <FontAwesomeIcon
                           className="me-2 position-relative"
                           icon={faFacebookMessenger}
@@ -70,7 +70,7 @@ export const GetInTouch = () => (
                       href={general.calendlyUrl}
                       className={`thm-btn mb-3 ${styles.actionButton}`}
                     >
-                      <div className="d-flex">
+                      <div className="d-flex align-items-center">
                         <FontAwesomeIcon
                           className="me-2 position-relative"
                           icon={faCalendar}
